@@ -1,7 +1,8 @@
 /* CHAT CHANNEL TEXT AREA */
 %chatForm {
   margin-top: 1px;
-  &:before {
+  &:before,
+  &:after {
     display: none;
   }
   .charcounter {
@@ -12,7 +13,7 @@
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.15s ease-in-out;
   &:focus-within {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
 
   %channelTextAreaScrollable {
@@ -55,7 +56,7 @@
     background: transparent;
     %channelTextAreaTypingText {
       color: hsla(0, 0%, 100%, 0.5);
-      >strong {
+      > strong {
         color: hsla(0, 0%, 100%, 0.7);
         font-weight: 700;
       }
@@ -88,17 +89,7 @@
   border: 2px solid transparent;
   box-shadow: none;
 }
-%replyMentionButton {
-  padding: 4px;
-  margin-right: 3px;
-  &%replyMentionButtonMuted {
-    color: rgb(240, 71, 71);
-  }
-  &%replyMentionButtonLink {
-    color: rgb(67, 181, 129);
-  }
-}
-%replyCancelButton {
+%replyCloseButton {
   padding: 8px 16px 8px 4px;
   margin-left: 4px;
 }
@@ -114,15 +105,12 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border-color: hsla(0, 0%, 100%, 0.07);
     &%autocompleteOptionPillSelected {
-      border-color: $main-color  !important;
+      border-color: $main-color !important;
     }
   }
   %autocompleteOptionPillKey {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
-}
-%autocompleteRemainingOptions {
-  color: hsla(0, 0%, 100%, 0.5);
 }
 
 // UPLOADER

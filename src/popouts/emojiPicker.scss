@@ -1,25 +1,26 @@
 /* EMOJI PICKER */
-
-.drawerSizingWrapper-1txdWG {
+%emojiPickerSizer {
   min-width: 430px;
 }
-.contentWrapper-3vHNP2 {
-  background-color: rgba(0, 0, 0, 0.8);
+%emojiPickerWrapper {
+  background-color: cv('bg.general.popout');
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 // NAV BAR
-.navButtonActive-1EqC5l {
+%emojiPickerNavButton {
   background-color: $main-color;
 }
-
+%emojiPickerHeader {
+  background-color: cv('bg.general.popout');
+}
 %emojiPicker {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   min-width: 430px;
   border-radius: 0;
-}
-%emojiPickerHeader {
-  background-color: rgba(0, 0, 0, 0.8);
+  %emojiPickerHeader {
+    background: transparent;
+  }
 }
 
 // SEARCH BAR
@@ -80,7 +81,8 @@
 }
 
 // CATEGORIES
-%emojiCategoryList {
+%emojiCategoryList,
+%emojiCategoryListWrapper {
   background-color: transparent;
 }
 %emojiCategoryItem {
@@ -116,40 +118,31 @@
 }
 
 // NO NITRO
-.premiumPromo-1eKAIB {
+%emojiPickerPremiumPromo {
   background-color: hsla(0, 0%, 0%, 0.9);
 }
-.premiumPromoClose-Nuntxy {
+%emojiPickerPremiumPromoClose {
   filter: brightness(0) invert(1);
   opacity: 0.6;
   &:hover {
     opacity: 0.8;
   }
 }
-.premiumPromoTitle-3tWrPT {
+%emojiPickerPremiumPromoTitle {
   color: #fff;
 }
-.premiumPromoTitle-3tWrPT {
-  color: hsla(0, 0%, 100%, 0.7);
-}
-.notice-1Qe0b_ {
+%emojiPickerPremiumUpsell {
   background-color: transparent;
 }
-.upsell-3B1lnN {
-  background-color: transparent;
+%emojiCategoryLockIconContainer {
+  background: $main-color;
+  border-color: $main-color;
 }
-.perks-2IIbWQ {
-  background-color: transparent;
+%emojiPickerPremiumUpsellContainer {
+  background: var(--background-overlay);
+  border: 2px solid $main-color;
 }
-.perkRow-10K6XE {
-  border-bottom: none;
+// NITRO EXPIRING NOTICE
+%emojiPickerPremiumRetentionNotice {
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
-
-// REACTIONS
-.contentWrapper-2f9yME {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.navButtonActive-fwiUKp {
-  background-color: $main-color;}

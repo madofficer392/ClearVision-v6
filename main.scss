@@ -1,4 +1,4 @@
-$version: '6.3.0';
+$version: '6.9.0';
 
 /* ### ClearVision v#{$version} by the ClearVision team ### */
 
@@ -27,10 +27,9 @@ $version: '6.3.0';
 @import 'src/app/titlebar';
 
 // CHANNEL
-@import 'src/channels/browseChannels';
+@import 'src/channels/specialChannels';
 @import 'src/channels/channels';
 @import 'src/channels/category';
-@import 'src/channels/channelNotice';
 @import 'src/channels/indicators';
 @import 'src/channels/panels';
 @import 'src/channels/privateChannels';
@@ -43,8 +42,7 @@ $version: '6.3.0';
 @import 'src/chat/stageCall';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
-@import 'src/chat/treads';
-@import 'src/chat/welcomeMessage';
+@import 'src/chat/modView';
 
 // GENERAL ELEMENTS
 @import 'src/general/badge';
@@ -57,6 +55,7 @@ $version: '6.3.0';
 @import 'src/general/slider';
 @import 'src/general/spinner';
 @import 'src/general/switch';
+@import 'src/general/tabBar';
 @import 'src/general/tooltip';
 
 // GUILDS
@@ -69,9 +68,9 @@ $version: '6.3.0';
 @import 'src/headerBar/toolbar';
 
 // HOME
-@import 'src/home/activity';
 @import 'src/home/friends';
 @import 'src/home/library';
+@import 'src/home/nitro';
 @import 'src/home/requests';
 
 // MEMBERS
@@ -79,8 +78,8 @@ $version: '6.3.0';
 @import 'src/members/tags';
 
 // MESSAGES
+@import 'src/messages/poll';
 @import 'src/messages/message';
-
 @import 'src/messages/activityInvite';
 @import 'src/messages/attachment';
 @import 'src/messages/blocked';
@@ -91,7 +90,6 @@ $version: '6.3.0';
 @import 'src/messages/mediaPlayer';
 @import 'src/messages/mention';
 @import 'src/messages/reaction';
-@import 'src/messages/spoiler';
 @import 'src/messages/textContainer';
 
 // MODALS
@@ -105,27 +103,24 @@ $version: '6.3.0';
 @import 'src/modals/userModal';
 
 // PAGES
+@import 'src/pages/appDirectory';
+@import 'src/pages/discordShop';
 @import 'src/pages/discover';
 @import 'src/pages/forums';
+@import 'src/pages/login';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/serverProfile';
-@import 'src/pages/studentHub.scss';
+@import 'src/pages/studentHub';
 
 // POPOUTS
-@import 'src/popouts/popout';
-
-@import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
-@import 'src/popouts/contextMenu';
 @import 'src/popouts/emojiPicker';
 @import 'src/popouts/gifPicker';
 @import 'src/popouts/groupInvite';
 @import 'src/popouts/mentionEveryone';
 @import 'src/popouts/menuPopout';
 @import 'src/popouts/regionSelectorPopout';
-@import 'src/popouts/messageOptions';
-@import 'src/popouts/messagesPopout';
+@import 'src/popouts/inboxPopout';
 @import 'src/popouts/otherPopouts';
 @import 'src/popouts/searchPopout';
 @import 'src/popouts/stickers';
@@ -145,6 +140,7 @@ $version: '6.3.0';
 @import 'src/settings/channelSettings';
 @import 'src/settings/content';
 @import 'src/settings/icons';
+@import 'src/settings/onboarding';
 @import 'src/settings/serverSettings';
 @import 'src/settings/sidebar';
 @import 'src/settings/userSettings';
@@ -156,26 +152,24 @@ $version: '6.3.0';
 @import 'src/users/role';
 @import 'src/users/status';
 
+// VENCORD
+@import 'src/injectors/ven/plugins';
+@import 'src/injectors/ven/venSettings';
+@import 'src/injectors/ven/icons';
+
+// REPLUGGED
+// @import 'src/injectors/rp/plugins';
+@import 'src/injectors/rp/rpSettings';
+
 // BETTERDISCORD
-@import 'src/bd/bdSettings';
-@import 'src/bd/customCSS';
-@import 'src/bd/emotePicker';
-@import 'src/bd/icons';
-@import 'src/bd/popouts';
-@import 'src/bd/sidebar';
-@import 'src/bd/sources';
+@import 'src/injectors/bd/bdSettings';
+@import 'src/injectors/bd/customCSS';
+@import 'src/injectors/bd/icons';
+@import 'src/injectors/bd/popouts';
+@import 'src/injectors/bd/sidebar';
+@import 'src/injectors/bd/sources';
+@import 'src/injectors/bd/plugins';
 
-// BETTERDISCORD PLUGINS
-@import 'src/bd/plugins/messageButtons';
-@import 'src/bd/plugins/pluginNotice';
+// FIXES
+@import 'src/fixespt2';
 
-@import 'src/bd/plugins/Arashiryuu/memberCount';
-@import 'src/bd/plugins/CapnKitten/HideChannels';
-@import 'src/bd/plugins/DevilBro/badgesEverywhere';
-@import 'src/bd/plugins/DevilBro/dateText';
-@import 'src/bd/plugins/DevilBro/gameActivityToggle';
-@import 'src/bd/plugins/DevilBro/ownerTag';
-@import 'src/bd/plugins/DevilBro/showHiddenChannels';
-@import 'src/bd/plugins/DevilBro/tooltips';
-@import 'src/bd/plugins/Finicalmist/copyCode';
-@import 'src/bd/plugins/noodlebox/lineNumbers';

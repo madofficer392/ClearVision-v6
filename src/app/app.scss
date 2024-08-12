@@ -1,8 +1,9 @@
 /* APP */
-%themeDark %appMount {
+%appMount {
   background: cv('bg.app.overlay');
 }
-%shakeable {
+%shakeable,
+body {
   background: transparent;
 }
 %bg {
@@ -16,34 +17,15 @@
     background: transparent;
   }
 }
-%layer {
-  %containerMain,
-  %standardSidebarView {
-    background: transparent;
-  }
-}
 %containerMain {
   %base {
     border-radius: 0;
   }
 }
 %backdrop {
-  &:before {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
-    @include filters(cv('bg.backdrop'));
-    pointer-events: none;
-  }
-  &:after {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.overlay');
-    pointer-events: none;
-  }
+  background: cv('bg.backdrop.overlay');
 }
+
 %loading {
   background-color: transparent;
   &:before,
@@ -60,8 +42,8 @@
   &:before {
     height: 26px;
     width: 26px;
-    border-left-color: var(--main-color);
-    border-right-color: var(--main-color);
+    border-left-color: $main-color;
+    border-right-color: $main-color;
   }
   &:after {
     height: 16px;

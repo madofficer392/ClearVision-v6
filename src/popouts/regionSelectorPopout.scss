@@ -1,9 +1,9 @@
 /* Region Selector */
 
-.theme-dark .regionSelectPopout-3sEzVB {
-  background-color: rgba(0, 0, 0, 0.5);
+%themeDark %regionSelectPopout {
+  background-color: cv('bg.general.popout');
 
-  .quickSelectPopoutOption-2E2UmS {
+  %regionSelectPopoutOption {
     background-color: transparent;
     border: none;
     //box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
@@ -15,7 +15,7 @@
       background-color: $hover-color;
     }
 
-    .regionSelectName-1Tj9C9 {
+    %regionSelectName {
       color: #fff;
     }
   }

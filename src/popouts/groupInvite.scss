@@ -2,16 +2,9 @@
 %themeDark {
   %groupInvitePopout {
     &%modalRoot {
-      background-color: hsla(0, 0%, 0%, 0.8);
+      background-color: cv('bg.general.popout');
     }
   }
-}
-// HEADER
-%groupInvitePopoutTitle {
-  color: #fff;
-}
-%groupInvitePopoutSubtitle {
-  color: hsla(0, 0%, 100%, 0.7);
 }
 
 // SEARCH

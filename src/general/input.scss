@@ -1,6 +1,6 @@
 /* INPUT */
 %inputWrapper {
-  padding: 0 2px 2px 2px;
+  padding: 2px;
 }
 %input {
   color: var(--text-normal);
@@ -17,27 +17,17 @@
   &%inputFocused {
     box-shadow: 0 0 2px 2px $main-color;
   }
-  &%inputNoBorder {
+  &%inputField {
     border: none;
     box-shadow: none;
     background: none;
   }
-  &%multiInput {
-    background: transparent;
+  %inputMultiField {
+    background-color: transparent;
     box-shadow: none;
   }
-  %multiInputFirst {
-    %multiInputField {
-      border-radius: 3px 0 0 3px;
-    }
-  }
-  %multiInputLast {
-    &:before {
-      height: 0;
-      width: 0;
-    }
-    %multiInputField {
-      border-radius: 0 3px 3px 0;
-    }
+  %inputCopy & {
+    background-color: transparent;
+    box-shadow: none;
   }
 }

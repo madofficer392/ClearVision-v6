@@ -1,38 +1,32 @@
 // EMOJI INFO POPOUT
-.popoutContainer-2wbmiM {
-  background-color: rgba(0, 0, 0, 0.8);
+%emojiInfoContainer {
+  background-color: cv('bg.general.popout');
 }
-.emojiSection-3QtaWO {
+%emojiInfoTip {
   background-color: transparent;
 }
-.guildSection-2Zyzy8 {
+%emojiInfoGuild {
   background-color: transparent;
-}
-.loadingBackground-1p5N1j {
-  .loading-1lSwpg {
-    opacity: 0.3;
-  }
 }
 
 // CHAT TOOLBAR
-.toolbar-37BrJ5 {
-  background-color: hsla(0, 0%, 0%, 0.8);
+%chatToolbar {
+  background-color: cv('bg.general.popout');
+  &::before {
+    border-top: 8px solid hsla(0, 0%, 0%, 0.8);
+  }
 }
-.toolbar-37BrJ5::before {
-  border-top: 8px solid hsla(0, 0%, 0%, 0.8);
-}
-.active-136ioF,
-.hover-3OQb9Y:hover {
+%chatToolbarButton:hover {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-.icon-3g7qdA {
+%chatToolbarIcon {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
 // STREAM POPOUT
 %themeDark {
   %streamPopoutPreview {
-    background-color: hsla(0, 0%, 0%, 0.8);
+    background-color: cv('bg.general.popout');
   }
   %streamPopoutPreviewContainer {
     background-color: transparent;
@@ -47,26 +41,61 @@
   }
 }
 
-// STUDENT HUBS
-%hubPopoutSidebar {
-  background: transparent;
+// VC ACTIVITY STATUS POPOUT
+%vcActivityPopout,
+%vcSetActivityPopout {
+  background-color: var(--popout-color);
+}
+%vcSetActivityPopoutIcon {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border-color: hsla(0, 0%, 100%, 0.09);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border-color: var(--hover-color);
+  }
+}
+%vcSetActivityPopoutButton {
+  background-color: var(--main-color);
+  border-color: transparent;
+  &:hover {
+    background-color: var(--hover-color);
+    border-color: transparent;
+  }
 }
 
 // LEAVE SERVER REASON
-.root-cw9rWQ {
-	background-color: transparent;
+%serverLeave {
+  background-color: transparent;
 }
-.problemInfo-1QppuA {
-  .option-1O-Hwt {
-    color: #fff;
-    background: hsla(0, 0%, 100%, .03);
-    border: 1px solid hsla(0, 0%, 100%, .05);
-    border-top: none;
-    &:first-child {
-      border-top: 1px solid hsla(0, 0%, 100%, .05);
-    }
+%serverLeaveOption {
+  color: #fff;
+  background: hsla(0, 0%, 100%, 0.03);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  border-top: none;
+  &:first-child {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.05);
   }
-  &:hover  {
-    background: hsla(0, 0%, 100%, .06);
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.06);
+  }
+}
+
+// NITRO PROFILE PICTURE UPSELL
+/*right popout*/
+%sidebarPFPUpsell {
+  background: var(--background-overlay);
+  border-left: 5px solid $main-color;
+}
+
+// MEMBERS ACTIVITY POPOUT
+/*clicked in*/
+%memberActivityInteractionsContainer {
+  background: var(--background-overlay);
+}
+/*clicked in icon*/
+%memberActivityShareToChannelButton {
+  background: var(--main-color);
+  path {
+    fill: #fff;
   }
 }

@@ -1,42 +1,46 @@
 /* PREVIEW SERVER */
 
 // WELCOME MODAL
-.optionContainer-yOpaLq {
+%previewServerOptionContainer {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .optionArrow-1kVloh {
+  %previewServerChannelOptionArrow {
+    color: #fff;
+  }
+  span {
     color: #fff;
   }
 }
-.channelIcon-QyaRxN {
-  background-color: transparent;
+%previewServerChannelIcon,
+%previewServerChannelTitleIcon {
+  color: #fff;
 }
 
-%themeDark .notice-12Koq- {
+%themeDark %previewServerNotice {
   background-color: transparent;
 }
-.notice-12Koq- .header-26uvhX::before {
+%notice__99c03 %previewServerHeader::before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--main-color);
+  background-color: $main-color;
   opacity: 0.6;
   pointer-events: none;
   z-index: -1;
   border-radius: 3px;
 }
 
-.container-2dXT_2 {
+%previewServerContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 // TOP BAR JOIN AND BACK BUTTON
-.button-3_1yil:hover {
+%previewServerBackButton:hover {
   background-color: $hover-color;
 }
 
@@ -49,41 +53,44 @@
 }
 
 // SERVER STATUS (E.G. PUBLIC OR PRIVATE)
-.communityInfoPill-2Mll66 {
+%previewServerStatus {
   background: rgba(0, 0, 0, 0.6);
 }
 
 // Nyx's fixes
-.container-2Hi7Km,
-.container-xwOzwi {
+%previewServerHomeContainer,
+%previewServerHomeContainerInner {
   background: transparent;
 }
-.icon-2IDTxf {
-	border: 4px solid transparent;
+%previewServerHomeIcon {
+  border: 4px solid transparent;
 }
-.interactiveCard-2iMtdk,
-.interactiveCard-2iMtdk.selected-sszUNx {
-	border: 1px solid var(--main-color);
+%previewServerHomeInteractiveCard {
+  &%previewServerHomeInteractiveCardSelected {
+    border: 1px solid $main-color;
+  }
+  &:hover {
+    border: 1px solid $hover-color;
+  }
+  &:active {
+    border: 1px solid $hover-color;
+  }
 }
-.interactiveCard-2iMtdk:active,
-.interactiveCard-2iMtdk:hover {
-	border: 1px solid var(--hover-color);
+%previewServerHomeCard {
+  background: rgba(0, 0, 0, 0.4);
 }
-.card-3x20HF {
-	background: rgba(0,0,0,.4);
+%previewServerIconContainer {
+  background: $main-color;
+  color: #fff;
 }
-.iconContainer-2R-3M1 {
-	background: var(--main-color);
-	color: #fff;
+%previewServerConversation:hover {
+  background: $hover-color;
 }
-.container-3HMTms:hover {
-	background: var(--hover-color);
+%previewServerConversationRoot:after,
+%previewServerConversationReply {
+  border-left: 2px solid $main-color;
 }
-.conversationRoot-3DieBj:after,
-.replySpine-3HmFN7 {
-	border-left: 2px solid var(--main-color);
-}
-.conversationMessage-hy6ISK:after {
-	border-left: 2px solid var(--main-color);
-	border-bottom: 2px solid var(--main-color);
+%previewServerConversationMessage:after {
+  border-left: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
 }

@@ -12,61 +12,33 @@ $colours: (
   'YouTube': #ff0000,
 );
 
-.connection-YOVI9j,
-.connectionHeader-Ixbb1s {
-  background: transparent;
+%connections {
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
-.connectionIcon-1iZ6F_ {
-  +div {
-    &:before {
-      content: '';
-      position: absolute;
-      @include stretch;
-      border-radius: 8px 8px 0 0;
-      pointer-events: none;
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      @include pos(68px, 0, -64px, 0);
-      border-radius: 0 0 8px 8px;
-      pointer-events: none;
-      z-index: -1;
-    }
-  }
-  @each $i,
-  $u in $colours {
-    &[alt*='#{$i}']+div {
-      &:before {
-        background-color: rgba($u, 0.6);
-      }
-      &:after {
-        background-color: rgba($u, 0.5);
-      }
-    }
-  }
-  &[alt*='Steam'],
-  &[alt*='Twitter'],
-  &[alt*='Spotify'],
-  &[alt*='Xbox Live'],
-  &[alt*='Facebook'] {
-    +div:after {
-      bottom: -108px;
-    }
-  }
-}
-.connectionAccountLabel-28GEPk {
-  color: hsla(0, 0%, 100%, 0.7);
-}
-.connectionDelete-3YgMVq {
-  color: hsla(0, 0%, 100%, 0.7);
+%connectionsHeader {
+  background-color: transparent;
 }
 
-.integrationsWrapper-1V-5L9 {
-  background-color: cv('const:colors.twitch-purple');
-  border-radius: 0 0 8px 8px;
+%connections {
+  @each $i, $u in $colours {
+    &:has(%connectionsIcon[alt*='#{$i}']) {
+      background-color: rgba($u, 0.5);
+    }
+  }
 }
-.integration-1qC-fv {
-  background-color: cv('const:colors.twitch-purple');
+%connectionsHeader {
+  @each $i, $u in $colours {
+    &:has(%connectionsIcon[alt*='#{$i}']) {
+      background-color: rgba($u, 0.2);
+    }
+  }
+}
+%connectionsAccountLabel {
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
+%connectionsDelete {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+%connectionsMetadataContainer {
+  background-color: hsla(0, 0%, 100%, 0.1);
 }

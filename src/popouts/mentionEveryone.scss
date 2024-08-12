@@ -1,8 +1,8 @@
 %themeDark {
-  .contentWarningPopout-WKdbDG {
-    background-color: rgba(0, 0, 0, 0.8);
+  %everyoneWarningPopout {
+    background-color: cv('bg.general.popout');
   }
-  .footer-2aeMle {
+  %everyoneWarningFooter {
     background-color: transparent;
   }
 }
