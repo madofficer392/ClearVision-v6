@@ -151,6 +151,12 @@
 .progressBarContainer_c75f85 {
   @extend %serverBoostProgressBar !optional;
 }
+.subscription_cf84f3 {
+  @extend %readyToBoostContainer !optional;
+}
+.tierPill_cf84f3 {
+  @extend %readyToBoostProgressPill !optional;
+}
 .containerDefault_a08117 {
   @extend %categoryContainerDefault !optional;
 }
@@ -387,6 +393,9 @@
 .panel_bf1a22 {
   @extend %panel !optional;
 }
+.title_b97bdb {
+  @extend %panelTitle !optional;
+}
 .button_adca65 {
   @extend %panelButton !optional;
 }
@@ -453,6 +462,9 @@
 .questAcceptedContent_e23249 {
   @extend %questPanelAcceptedExpandedContent !optional;
 }
+.listeningAlong_d4626d {
+  @extend %listeningAlongPanel !optional;
+}
 .connection_e2a436 {
   @extend %connections !optional;
 }
@@ -510,14 +522,10 @@
 .gameIcon_bf1a22 {
   @extend %activityPanelGameIcon !optional;
 }
-.title_d1da5f {
-  // Duplicate Class
-  @extend %activityPanelTitle !optional;
-}
 .actions_bf1a22 {
   @extend %activityPanelActions !optional;
 }
-.liveBadge_bf1a22 {
+.liveBadge_aa73eb {
   @extend %panelLiveBadge !optional;
 }
 .noiseCancellationPopout_adcaac {
@@ -811,13 +819,13 @@
 .form_a7d72e {
   @extend %chatForm !optional;
 }
-.channelTextArea_d0696b {
+.channelTextArea_bdf0de {
   @extend %channelTextArea !optional;
 }
-.scrollableContainer_d0696b {
+.scrollableContainer_bdf0de {
   @extend %channelTextAreaScrollable !optional;
 }
-.inner_d0696b {
+.inner_bdf0de {
   @extend %channelTextAreaInner !optional;
 }
 .attachWrapper_f298d4 {
@@ -832,13 +840,13 @@
 .attachButtonPlus_f298d4 {
   @extend %channelTextAreaAttachButtonPlus !optional;
 }
-.textArea_d0696b {
+.textArea_bdf0de {
   @extend %textArea !optional;
 }
 .placeholder_a552a6 {
   @extend %textAreaPlaceholder !optional;
 }
-.textAreaSlate_d0696b {
+.textAreaSlate_bdf0de {
   @extend %slateTextArea !optional;
 }
 .button_f9af59 {
@@ -853,10 +861,10 @@
 .text_d7ebeb {
   @extend %channelTextAreaTypingText !optional;
 }
-.attachedBars_d0696b {
+.stackedBars_bdf0de {
   @extend %channelTextAreAttachedBar !optional;
 }
-.stackedAttachedBar_d0696b {
+.stackedAttachedBar_bdf0de {
   @extend %channelTextAreaStackedAttachedBar !optional;
 }
 .upload_df1eaf {
@@ -988,9 +996,6 @@
 .lookOutlined_dd4f85 {
   @extend %buttonOutlined !optional;
 }
-.lookInverted_a299dc {
-  @extend %buttonInverted !optional;
-}
 .lookLink_dd4f85 {
   @extend %buttonLink !optional;
 }
@@ -1000,8 +1005,8 @@
 .colorBrand_dd4f85 {
   @extend %buttonColorBrand !optional;
 }
-.colorBrandNew__8872c {
-  @extend %buttonColorBrandNew !optional;
+.colorBrandInverted_dd4f85 {
+  @extend %buttonColorBrandInverted !optional;
 }
 .colorPrimary_dd4f85 {
   @extend %buttonColorPrimary !optional;
@@ -1017,9 +1022,6 @@
 }
 .colorLink_dd4f85 {
   @extend %buttonColorLink !optional;
-}
-.colorYellow__818c3 {
-  @extend %buttonColorYellow !optional;
 }
 .buttonColor_d4af21 {
   @extend %buttonCallInvite !optional;
@@ -1277,10 +1279,13 @@
   @extend %commandTooltipPointer !optional;
 }
 .upsellTooltipWrapper_dafa63 {
-  @extend %upsellTooltipText !optional;
+  @extend %upsellTooltip !optional;
 }
 .caretTopCenter_dafa63 {
   @extend %upsellTooltipCaretTopCenter !optional;
+}
+.caretRightCenter_dafa63 {
+  @extend %upsellTooltipCaretRightCenter !optional;
 }
 .reactionTooltip_fba897 {
   @extend %reactionTooltip !optional;
@@ -1302,6 +1307,9 @@
 }
 .scroller_fea3ef {
   @extend %guilds !optional;
+}
+.footer_d71945 {
+  @extend %guildsFooter !optional;
 }
 .listItem_c96c45 {
   @extend %guild !optional;
@@ -1643,6 +1651,9 @@
 .gameIcon_f1629a {
   @extend %libraryTableGameIcon !optional;
 }
+.gameUpdates_f1035a {
+  @extend %libraryGameDownloadContainer !optional;
+}
 .nameCellInfo_f1629a {
   @extend %libraryTableNameCellInfo !optional;
 }
@@ -1712,7 +1723,7 @@
 .offline_a31c43 {
   @extend %memberOffline !optional;
 }
-.layout_d808b0 {
+.memberInner_a31c43 {
   @extend %memberLayout !optional;
 }
 .avatar_d808b0 {
@@ -1763,11 +1774,14 @@
 .placeholderAvatar_dac468 {
   @extend %memberPlaceholderAvatar !optional;
 }
-.placeholderUsername_a43b87 {
+.placeholderUsername_dac468 {
   @extend %memberPlaceholderUsername !optional;
 }
 .mulitplePlaceholderUsername_dac468 {
   @extend %memberPlaceholderUsernameMultiple !optional;
+}
+.popoutContentWrapper_a35965 {
+  @extend %memberActivityContentWrapper !optional;
 }
 .interactionsContainer_a35965 {
   @extend %memberActivityInteractionsContainer !optional;
@@ -1874,16 +1888,16 @@
 .downloadButton__3fb6d {
   @extend %attachmentDownloadButton !optional;
 }
-.filenameWrapper_b52bef {
-  @extend %fileNameWrapper !optional;
+.file_f46c86 {
+  @extend %fileUploading !optional;
 }
-.filename_b52bef {
+.filename_f46c86 {
   @extend %fileName !optional;
 }
-.size_b52bef {
+.size_f46c86 {
   @extend %fileSize !optional;
 }
-.progress_b52bef {
+.progress_c6473a {
   @extend %fileProgress !optional;
 }
 .progressBar_c6473a {
@@ -1974,10 +1988,7 @@ pre {
 .imageError_d4597d {
   @extend %imageError !optional;
 }
-.hoverButtonGroup_e5c1dc {
-  @extend %imageHoverButtonGroup !optional;
-}
-.hoverButton_e5c1dc {
+.hoverButton_d0395d {
   @extend %imageHoverButton !optional;
 }
 .embedThumbnail_b0068a {
@@ -2106,7 +2117,7 @@ pre {
 .bubble_d12f5a {
   @extend %playerMediaBarBubble !optional;
 }
-.hoverButtonGroup_e5c1dc {
+.hoverButtonGroup_d0395d {
   @extend %playerMediaDownload !optional;
 }
 .container_d6cb89 {
@@ -2199,11 +2210,17 @@ pre {
 .repliedMessage_f9f2ca {
   @extend %messageReplied !optional;
 }
+.repliedMessageClickableSpine_f9f2ca {
+  @extend %messageRepliedSpine !optional;
+}
+.repliedMessageContentHovered_f9f2ca {
+  @extend %messageRepliedContentHovered !optional;
+}
 .repliedTextPreview_f9f2ca {
   @extend %messageRepliedTextPreview !optional;
 }
-.clickable_f9f2ca {
-  @extend %messageRepliedTextPreviewClickable !optional;
+.repliedMessageClickableSpineHovered_f9f2ca  {
+  @extend %messageRepliedSpineHovered !optional;
 }
 .repliedTextContent_f9f2ca {
   @extend %messageRepliedTextContent !optional;
@@ -2322,6 +2339,39 @@ pre {
 .reactionCount_ec6b19 {
   @extend %reactionCount !optional;
 }
+.reactionBtn_ec6b19 {
+  @extend %reactionAdd !optional;
+}
+.forceShowLook_ec6b19 {
+  @extend %reactionAddForceShow !optional;
+}
+.popoutContainer_cf58b5 {
+  @extend %reactionInfoContainer !optional;
+}
+.emojiSection_e58351 {
+  @extend %reactionInfoTip !optional;
+}
+.guildSection_e58351 {
+  @extend %reactionInfoGuild !optional;
+}
+.scroller_f2bfbb {
+  @extend %reactionModalScroller !optional;
+}
+.reactors_f2bfbb {
+  @extend %reactionModalReactors !optional;
+}
+.reactionDefault_f2bfbb {
+  @extend %reactionModalDefault !optional;
+}
+.reactionSelected_f2bfbb {
+  @extend %reactionModalSelected !optional;
+}
+.colorStandard_d1aa77 {
+  @extend %reactionModalColorStandard !optional;
+}
+.burstGlow_ec6b19 {
+  @extend %superReactionGlow !optional;
+}
 .spoilerMarkdownContent_aa9639 {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -2336,6 +2386,9 @@ pre {
 }
 .keyboardShortcutsModal_ad95dc {
   @extend %keyboardShortcutsModal !optional;
+}
+.keybindGroup_ad95dc {
+  @extend %keybindGroup !optional;
 }
 .combo_c90023 {
   @extend %keybindCombo !optional;
@@ -2391,21 +2444,6 @@ pre {
 .childButton_f45bfc {
   @extend %messageReportOption !optional;
 }
-.scroller_f2bfbb {
-  @extend %reactionModalScroller !optional;
-}
-.reactors_f2bfbb {
-  @extend %reactionModalReactors !optional;
-}
-.reactionDefault_f2bfbb {
-  @extend %reactionModalDefault !optional;
-}
-.reactionSelected_f2bfbb {
-  @extend %reactionModalSelected !optional;
-}
-.colorStandard_d1aa77 {
-  @extend %reactionModalColorStandard !optional;
-}
 .quickswitcher_f4e139 {
   @extend %quickswitcher !optional;
 }
@@ -2421,68 +2459,83 @@ pre {
 .wrapper_dc0b29 {
   @extend %quickswitcherPing !optional;
 }
-.paymentNote_cc6017 {
-  @extend %nitroPaymentNote !optional;
+.skuSelectModalHeader_f92df2 {
+  @extend %nitroPaymentSelectTierHeader !optional;
+}
+.skuSelectModalContent_f92df2 {
+  @extend %nitroPaymentSelectTier !optional;
+}
+.modalHeader_a27f2f {
+  @extend %nitroPaymentHeader !optional;
 }
 .wrapper_bfc2c6 {
-  @extend %nitroPaymentWrapper !optional;
+  @extend %nitroPaymentBreadcrumb !optional;
 }
 .body_bf926b {
   @extend %nitroPaymentBody !optional;
 }
-.table_df16c1 {
-  @extend %nitroPaymentTable !optional;
-}
 .planOptionDiscount_bd3462 {
   @extend %nitroPaymentDiscount !optional;
 }
+.table_df16c1 {
+  @extend %nitroPaymentUpdateTable !optional;
+}
+.divider_df16c1 {
+  @extend %nitroPaymentUpdateTableDivider !optional;
+}
+.body_f4a859 {
+  @extend %nitroPaymentDowngrade !optional;
+}
+.whatYouLoseItem_f4a859 {
+  @extend %nitroPaymentDowngradeCard !optional;
+}
 .cardNumberWrapper_c04e45 {
-  @extend %nitroPaymentCardInputWrapper !optional;
+  @extend %paymentCardInputWrapper !optional;
 }
 .cardInput_c04e45 {
-  @extend %nitroPaymentCardInput !optional;
+  @extend %paymentCardInput !optional;
 }
 .cardInputFocused_c04e45 {
-  @extend %nitroPaymentCardInputFocused !optional;
+  @extend %paymentCardInputFocused !optional;
+}
+.spinner_b0f29a {
+  @extend %giftSpinner !optional;
+}
+.customGiftBoxHighlighted_c4afc7 {
+  @extend %giftBoxSelected !optional;
+}
+.modalHeaderCustomGift_a27f2f {
+  @extend %giftNitroHeader !optional;
+}
+.selectedPlan_bd3462 {
+  @extend %giftNitroPlanSelected !optional;
+}
+.iconBackground_e4d3f1 {
+  @extend %giftNitroShopIcon !optional;
+}
+.headerContainerGift_f8f790 {
+  @extend %giftShopHeader !optional;
+}
+.previewContainerSelected_b74403 {
+  @extend %giftShopItemSelected !optional;
+}
+.navigateToShopButton_dcb6d5 {
+  @extend %giftShopNaviButton !optional;
 }
 .content_cc6017 {
-  @extend %serverBoostPerkContent !optional;
+  @extend %boostPaymentContent !optional;
 }
 .iconWrapper_cc6793 {
-  @extend %serverBoostPaymentQuantityIconWrapper !optional;
+  @extend %boostPaymentQuantityIconWrapper !optional;
 }
 .icon_cc6793 {
-  @extend %serverBoostPaymentQuantityIcon !optional;
+  @extend %boostPaymentQuantityIcon !optional;
 }
 .upsellFooter_a26a1a {
-  @extend %serverBoostPaymentUpsellFooter !optional;
+  @extend %boostPaymentUpsellFooter !optional;
 }
 .perksList_cf948e {
-  @extend %serverBoostPaymentPerksList !optional;
-}
-.actions_f8746a {
-  @extend %serverBoostPaymentActions !optional;
-}
-.innerWrapper_aecbd6 {
-  @extend %serverBoostPageBoostPrompt !optional;
-}
-.topPerksCard_adc107 {
-  @extend %serverBoostPageTopPerksCard !optional;
-}
-.card_d1fdce {
-  @extend %serverBoostPageCard !optional;
-}
-.wrapper_e55051 {
-  @extend %serverBoostPageFaq !optional;
-}
-.scroller_a50853 {
-  @extend %serverBoostPageScroller !optional;
-}
-.headerWave_a586c4 {
-  @extend %serverBoostPageHeaderWave !optional;
-}
-.bodyWave_a586c4 {
-  @extend %serverBoostPageBodyWave !optional;
+  @extend %boostPaymentPerksList !optional;
 }
 .contentWrapper_ed5743 {
   @extend %webInviteModalContentWrapper !optional;
@@ -2496,6 +2549,9 @@ pre {
 .activeIcon_e1268c {
   @extend %switchAccountsActive !optional;
 }
+.contentBackground_c5a065 {
+  @extend %botInviteModalContent !optional;
+}
 .authorize_c5a065 {
   @extend %authModal !optional;
 }
@@ -2508,156 +2564,67 @@ pre {
 .footer_c5a065 {
   @extend %authModalFooter !optional;
 }
-.userProfileOuter_c69a7b {
+.outer_c69a7b {
   @extend %userProfileOuter !optional;
 }
-.userProfileOuterUnthemed_c69a7b {
-  @extend %userProfileOuterUnthemed !optional;
+.custom-profile-theme {
+  @extend %userProfileCustomTheme !optional;
 }
-.userProfileOuterThemed_c69a7b {
-  @extend %userProfileOuterThemed !optional;
+.inner_c69a7b {
+  @extend %userProfileInner !optional;
 }
-.statusBubbleOuter_d0a252 {
+.biteSize_c69a7b {
+  @extend %userProfileSmall !optional;
+}
+.fullSize_c69a7b {
+  @extend %userProfileFull !optional;
+}
+.statusBubbleOuter_a82ccc,
+.statusBubbleOuter_af9888 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_d0a252 {
+.statusBubble_a82ccc,
+.statusBubble_af9888 {
   @extend %userProfileStatusBubble !optional;
 }
-.userPanelInnerThemed_c69a7b {
-  @extend %userProfileDMInnerThemed !optional;
-}
-.badgeList_ab525a {
-  @extend %userProfileDMBadgeList !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userProfileDMOverlayBackground !optional;
-}
-.actionColor_fc39e7 {
-  @extend %userModalActivityButton !optional;
-}
-.banner_c3e427 {
+.banner_d5fdb1 {
   @extend %userProfileBanner !optional;
 }
-.bannerPremium_c3e427 {
-  @extend %userProfileBannerPremium !optional;
+.container_b64375 {
+  @extend %userProfileBadgeList !optional;
 }
-.userPopoutOuter_c69a7b {
-  @extend %userPopoutOuter !optional;
+.overlay_c69a7b {
+  @extend %userProfileOverlay !optional;
 }
-.userPopoutInner_c69a7b {
-  @extend %userPopoutInner !optional;
+.scroller_d53fbd {
+  @extend %userProfileOverlayScroller !optional;
 }
-.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
-.userProfileInnerThemedWithBanner_c69a7b {
-  @extend %userPopoutInnerThemed !optional;
+.connectedAccountContainer_ab12c6 {
+  @extend %userProfileConnectedAccountContainer !optional;
 }
-.popoutBanner_c3e427 {
-  @extend %userPopoutBanner !optional;
+.connectedAccountVerifiedIcon_ab12c6 {
+  @extend %userProfileConnectedAccountVerifiedIcon !optional;
 }
-.popoutNoBannerPremium_c3e427 {
-  @extend %userPopoutNoBannerPremium !optional;
+.connectedAccountOpenIcon_ab12c6 {
+  @extend %userProfileConnectedAccountOpenIcon !optional;
 }
-.popoutBannerPremium_c3e427 {
-  @extend %userPopoutBannerPremium !optional;
+.listRow_d2d6cb {
+  @extend %userProfileListRow !optional;
 }
-.profileBadges_f89da9 {
-  @extend %userPopoutProfileBadges !optional;
-}
-.userPopoutOverlayBackground_c69a7b {
-  @extend %userPopoutOverlayBackground !optional;
-}
-.profileCustomizationPreview_ab876d {
-  @extend %userPopoutCustomizationPreview !optional;
-}
-.activity_cd74cc {
-  @extend %userPopoutActivity !optional;
-}
-.buttonColor_cd74cc {
-  @extend %userPopoutActivityButton !optional;
-}
-.roles_fa2f72 {
-  @extend %userPopoutRoles !optional;
-}
-.note_c90ad7 {
-  @extend %userPopoutNote !optional;
-}
-.menu_ad5fac {
-  @extend %userPopoutMenu !optional;
-}
-.userProfileModalOuter_c69a7b {
-  @extend %userModalOuter !optional;
-}
-.userProfileModalInner_c69a7b {
-  @extend %userModalInner !optional;
-}
-.modalBanner_c3e427 {
-  @extend %userModalBanner !optional;
-}
-.modalBannerPremium_c3e427 {
-  @extend %userModalBannerPremium !optional;
-}
-.badgeList_ec3b75 {
-  @extend %userModalBadgeList !optional;
-}
-.badgeList_b69b77 {
-  @extend %accountSettingsBadges !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userModalOverlayBackground !optional;
-}
-.body_b9fccc {
-  @extend %userModalBody !optional;
-}
-.tabBarContainer_b9fccc {
-  @extend %userModalTabBarContainer !optional;
-}
-.tabBar_c1519f {
-  @extend %userModalTabBarContainerNew !optional;
-}
-.userInfoSection_a24910 {
-  @extend %userModalInfoSection !optional;
-}
-.userInfoSectionHeader_a24910 {
-  @extend %userModalInfoSectionHeader !optional;
-}
-.connectedAccounts_f3eb60 {
-  @extend %userModalConnectedAccounts !optional;
-}
-.connectedAccountContainer_f3eb60 {
-  @extend %userModalConnectedAccountContainer !optional;
-}
-.connectedAccountIcon_f3eb60 {
-  @extend %userModalConnectedAccountIcon !optional;
-}
-.connectedAccountName_f3eb60 {
-  @extend %userModalConnectedAccountName !optional;
-}
-.connectedAccountVerifiedIcon_f3eb60 {
-  @extend %userModalConnectedAccountVerifiedIcon !optional;
-}
-.connectedAccountOpenIcon_f3eb60 {
-  @extend %userModalConnectedAccountOpenIcon !optional;
-}
-.listScroller_e4be58 {
-  @extend %userModalListScroller !optional;
-}
-.listRow_e4be58 {
-  @extend %userModalListRow !optional;
-}
-.listRowContent_e4be58 {
-  @extend %userModalListRowConent !optional;
-}
-.listName_e4be58 {
-  @extend %userModalListName !optional;
-}
-.guildNick_b26403 {
-  @extend %userModalListGuildNick !optional;
-}
-.note_c2dcc6 {
-  @extend %userModalNote !optional;
+.note_d53fbd {
+  @extend %userProfileNote !optional;
 }
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
+}
+.scroller_b91a2d {
+  @extend %discover !optional;
+}
+.backdrop_accde0 {
+  @extend %discoverHeaderBackdrop !optional;
+}
+.selected_a853ca {
+  @extend %discoverTabSelected !optional;
 }
 .search_f69601 {
   @extend %discoverSearch !optional;
@@ -2665,7 +2632,7 @@ pre {
 .searchBox_d83b4d {
   @extend %discoverSearchBox !optional;
 }
-.searchBoxInput_d83b4d{
+.searchBoxInput_d83b4d {
   @extend %discoverSearchBoxInput !optional;
 }
 .searchIcon_d83b4d {
@@ -2677,17 +2644,14 @@ pre {
 .searchPage_a3a4ce {
   @extend %discoverSearchPage !optional;
 }
-.sidebarContainer_a3a4ce {
+.container_e462a4 {
   @extend %discoverCategory !optional;
 }
-.categoryItem_c72b37 {
+.navItem_e462a4 {
   @extend %discoverCategoryItem !optional;
 }
-.selectedCategoryItem_c72b37 {
+.selected_e462a4 {
   @extend %discoverCategoryItemSelected !optional;
-}
-.itemInner_c72b37 {
-  @extend %discoverCategoryItemInner !optional;
 }
 .guildList_c8c448 {
   @extend %discoverGuildList !optional;
@@ -2698,13 +2662,13 @@ pre {
 .loaded_e90879 {
   @extend %discoverGuildCardLoaded !optional;
 }
-.card_e90879 {
+.card_e32e6f {
   @extend %discoverGuildCard !optional;
 }
 .container_f11cbf {
   @extend %discoverHubCard !optional;
 }
-.iconMask_e90879 {
+.iconMask_c73cee {
   @extend %discoverGuildCardIcon !optional;
 }
 .splash_e90879 {
@@ -2731,16 +2695,40 @@ pre {
 .dotOffline_e90879 {
   @extend %discoverGuildStatusOffline !optional;
 }
-.emptyContainer_e37a20 {
-  @extend %discoverEmptyResults !optional;
+.spinner_b6db20 {
+  @extend %discoverGuildLoading !optional;
 }
-.emptyImage_e37a20 {
-  @extend %discoverEmptyImage !optional;
+.headerBar_accde0 {
+  @extend %discoverSearchHeader !optional;
 }
-.emptyHeader_e37a20 {
-  @extend %discoverEmptyTitle !optional;
+.container_b120dc {
+  @extend %discoverSearch !optional;
 }
-.debugPanelStandalone_feab95 {
+.iconButton_accde0 {
+  @extend %discoverSearchBackButton !optional;
+}
+.container_bac4a9 {
+  @extend %discoverSearchEmpty !optional;
+}
+.category_d70b79 {
+  @extend %discoverSearchCategory !optional;
+}
+.selected_d70b79 {
+  @extend %discoverSearchCategorySelected !optional;
+}
+.container_a97111 {
+  @extend %discoverQuestItem !optional;
+}
+.darkThemeGradient_f2bc91 {
+  @extend %discoverQuestItemGradient !optional;
+}
+.rewardDescriptionContainer_c2d7e2 {
+  @extend %discoverQuestItemDescription !optional;
+}
+.questName_c2d7e2 {
+  @extend %discoverQuestItemName !optional;
+}
+.container_feab95 {
   @extend %connectionDebugPopout !optional;
 }
 .popoutText_c73c22 {
@@ -2772,6 +2760,9 @@ pre {
 }
 .searchBar_c6ee36 {
   @extend %emojiPickerSearchBar !optional;
+}
+.label_d1ac9b {
+  @extend %emojiPickerSuperReactionButton !optional;
 }
 .diversitySelectorOptions_cce80d {
   @extend %emojiPickerDiversitySelectorPopout !optional;
@@ -3031,7 +3022,7 @@ pre {
 .hintValue_b0286e {
   @extend %searchPopoutHintValue !optional;
 }
-.calendarPicker_be05cd  {
+.calendarPicker_be05cd {
   @extend %calendarPicker !optional;
 }
 .react-datepicker {
@@ -3105,9 +3096,6 @@ pre {
 }
 .note_a2a7b5 {
   @extend %errorPageNote !optional;
-}
-.children_a6ae9b {
-  @extend %paymentinfo !optional;
 }
 .container_e40c16 {
   @extend %loadingScreen !optional;
@@ -3221,7 +3209,7 @@ pre {
   @extend %settingsSidebar !optional;
 }
 .selectedBackground_ae3c77 {
-  @extend %settingsSidebarScrollerSelectedBackground !optional;
+  @extend %settingsSidebarNitroSelected !optional;
 }
 .header_a0 {
   @extend %settingsHeader !optional;
@@ -3231,9 +3219,6 @@ pre {
 }
 .separator_a0 {
   @extend %settingsSeparator !optional;
-}
-.serverBoostTabItem_f7189e {
-  @extend %settingsServerBoostTabItem !optional;
 }
 .socialLinks_c44e94 {
   @extend %settingsSocialLinks !optional;
@@ -3255,6 +3240,12 @@ pre {
 }
 .roleRow_a930f1 {
   @extend %guildSettingsRoleRow !optional;
+}
+.movedTable_dd2627 {
+  @extend %guildSettingsMembersMoved !optional;
+}
+.bannerContainer_cc2901 {
+  @extend %guildSettingsShowMembersInChannelList !optional;
 }
 .roleRowDisableHover_a930f1 {
   @extend %guildSettingsRoleRowDisabled !optional;
@@ -3694,34 +3685,28 @@ pre {
 .botTagInvert_a9e77f {
   @extend %botTagInvert !optional;
 }
-.role_e4010c, //top is old profiles, bottom new profiles
 .role_f9575e {
   @extend %role !optional;
 }
-.roleCircle_a26d7b,
 .roleCircle_f9575e {
   @extend %roleCircle !optional;
 }
-.roleRemoveIcon_e4010c,
 .roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_f9575e,
 .roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
-.roleName_e4010c,
 .roleName_f9575e {
   @extend %roleName !optional;
 }
-.addButton_e4010c,
 .button_edead5 {
   @extend %roleAddButton !optional;
 }
 .container_ac201b {
   @extend %roleAssignPopout !optional;
 }
-.loading_cea94f {
+.loading_f3e233 {
   @extend %loading !optional;
 }
 .container_b11c5e {
@@ -3736,7 +3721,7 @@ pre {
 .mentionButton_b11c5e {
   @extend %replyMentionButton !optional;
 }
-.closeButton_b11c5e {
+.closeButton_cb4d21 {
   @extend %replyCloseButton !optional;
 }
 .separator_b11c5e {
@@ -3769,17 +3754,20 @@ pre {
 .avatar_b69b77 {
   @extend %userSettingsAccountProfileAvatar !optional;
 }
+.badgeList_b69b77 {
+  @extend %userSettingsAccountBadgeList !optional;
+}
+.container_f4c122 {
+  @extend %userSettingsProfilePreview !optional;
+}
 .premiumFeatureBorder_c6d722 {
   @extend %userSettingsProfilePremiumBorder !optional;
 }
 .premiumBackground_c6d722 {
   @extend %userSettingsProfilePremiumBackground !optional;
 }
-.upsellOverlayContainer_eb49af {
-  @extend %userSettingsProfileUpsellOverlayContainer !optional;
-}
-.upsellOverlay_eb49af {
-  @extend %userSettingsProfileUpsellOverlay !optional;
+.upsellContainer_ad7baa {
+  @extend %userSettingsProfileUpsellContainer !optional;
 }
 .container_f7ea1b {
   @extend %userSettingsPrivacyStandingContainer !optional;
@@ -3869,7 +3857,7 @@ pre {
 .detailsBlock_a206c7 {
   @extend %userSettingsSubsPayDetailsBlock !optional;
 }
-.premiumSubscriptionAccountCredit_ca73a1 {
+.premiumSubscriptionAccountCredit_b7f69f {
   @extend %userSettingsSubsAccountCredit !optional;
 }
 .defaultIndicator_ede133 {
@@ -3917,6 +3905,12 @@ pre {
 }
 .notches_a1107d {
   @extend %userSettingsMicTestNotches !optional;
+}
+.sliderBar_b6e3f3 {
+  @extend %userSettingsVoiceSensitivity !optional;
+}
+.speaking_b6e3f3 {
+  @extend %userSettingsVoiceSensitivitySpeaking !optional;
 }
 .soundButtonSettingContainer_c801bb {
   @extend %userSettingsEntranceSoundButton !optional;
@@ -4035,6 +4029,9 @@ pre {
 .checkmark_f9902b {
   @extend %serverInviteTick !optional;
 }
+.default_a467ac {
+  @extend %serverInviteCancel !optional;
+}
 .textContainer_d8e2d0 {
   @extend %textContainer !optional;
 }
@@ -4131,12 +4128,6 @@ pre {
 .stageListenerPill_a6ae3c {
   @extend %stageGuildListenerIcon !optional;
 }
-.categoryPill_f69601 {
-  @extend %categoryPill !optional;
-}
-.selected_f69601 {
-  @extend %categoryPillSelected !optional;
-}
 .pageControlContainer_b48941 {
   @extend %pageControlContainer !optional;
 }
@@ -4193,6 +4184,12 @@ pre {
 }
 .emptyText_f02fcf {
   @extend %emptyActiveNowText !optional;
+}
+.wrapper_a18c91 {
+  @extend %promotedQuestActivity !optional;
+}
+.promotedTagBackground_a4a2b0 {
+  @extend %promotedQuestPill !optional;
 }
 .button_a24e84 {
   @extend %quickReactButton !optional;
@@ -4494,8 +4491,11 @@ pre {
 .gridProgressBar_d7df05 {
   @extend %giftQuestProgress !optional;
 }
-.phoneFieldPopout_ff761b {
-  @extend %phoneVerification !optional;
+.phoneField_f26de7 {
+  @extend %phoneInput !optional;
+}
+.inputField_f26de7 {
+  @extend %phoneInputField !optional;
 }
 .maskBackground_ccd3df {
   @extend %typingStickerRecommendationHover !optional;
@@ -4752,6 +4752,9 @@ pre {
 .linkContainer_ddbb27 {
   @extend %forumRulesLinkContainer !optional;
 }
+.showMoreText_ddbb27 {
+  @extend %forumRulesShowMore !optional;
+}
 .newPostsButton_a6d69a {
   @extend %forumNewPosts !optional;
 }
@@ -4782,32 +4785,32 @@ pre {
 .addTags_faaca1 {
   @extend %forumSettingsGuidelinesAddTags !optional;
 }
-.heading-lg-bold_f5eeaa {
-  @extend %headingLargeBold !optional;
-}
-.heading-lg-semibold__58a54 {
-  @extend %headingLargeSemibold !optional;
-}
-.text-xs-normal__46d75 {
+.text-xs\/normal_dc00ef {
   @extend %textExtraSmallNormal !optional;
 }
-.text-xs-medium_d3e0f1 {
+.text-xs\/medium_dc00ef {
   @extend %textExtraSmallMedium !optional;
 }
-.text-xs-bold__5467c {
+.text-xs\/bold_dc00ef {
   @extend %textExtraSmallBold !optional;
 }
-.text-sm-medium__726be {
+.text-sm\/normal_dc00ef {
+  @extend %textSmallNormal !optional;
+}
+.text-sm\/medium_dc00ef {
   @extend %textSmallMedium !optional;
 }
-.text-md-medium_a84e09 {
+.text-sm\/semibold_dc00ef {
+  @extend %textSmallSemibold !optional;
+}
+.text-md\/medium_dc00ef {
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__6e567 {
+.text-md\/normal_dc00ef {
   @extend %textMediumNormal !optional;
 }
-.text-sm-normal__95a78 {
-  @extend %textSmallNormal !optional;
+.heading-sm\/medium_dc00ef {
+  @extend %headingSmallMedium !optional;
 }
 .directoryContainer_da3f59 {
   @extend %directoryContainer !optional;
@@ -4864,13 +4867,34 @@ pre {
   @extend %soundboard !optional;
 }
 .soundButton_f40049 {
-  @extend %soundboardSound !optional;
+  @extend %soundboardButton !optional;
 }
-.categoryIcon_ceda83.selected_ceda83 {
-  @extend %soundboardGuildSelected !optional;
+.soundName_f40049 {
+  @extend %soundboardSoundName !optional;
+}
+.hoverActiveBackground_f40049 {
+  @extend %soundboardSoundHover !optional;
+}
+.soundAddText_c06ee5 {
+  @extend %soundboardAddText !optional;
 }
 .keybindHint_c66e5e {
   @extend %soundboardHint !optional;
+}
+.refresh_cd703d {
+  @extend %soundboardRefresh !optional;
+}
+.soundButtonRefresh_f40049 {
+  @extend %soundboardButtonRefresh !optional;
+}
+.soundNameRefresh_f40049 {
+  @extend %soundboardSoundNameRefresh !optional;
+}
+.soundAddTextRefresh_c06ee5 {
+  @extend %soundboardAddTextRefresh !optional;
+}
+.secondaryButtonRefresh_f40049Refresh {
+  @extend %soundboardSecondaryButton !optional;
 }
 .homeContainer_e85cee {
   @extend %homeContainer !optional;
@@ -4935,6 +4959,12 @@ pre {
 .overlay_cd377c {
   @extend %serverExperienceGradient !optional;
 }
+.container_f1fd9c {
+  @extend %customizeChannels !optional;
+}
+.header_f1fd9c {
+  @extend %customizeChannelsHeader !optional;
+}
 .tabBar_f1fd9c {
   @extend %customizeChannelsHeaderBar !optional;
 }
@@ -4956,8 +4986,11 @@ pre {
 .role_c6b11b {
   @extend %customizeChannelsProfileRole !optional;
 }
-.container_b55df8 {
+.pageBody_c2efea {
   @extend %browseChannels !optional;
+}
+.container_b55df8 {
+  @extend %browseChannelsTip !optional;
 }
 .selectAll_f04d06 {
   @extend %browseChannelsSelectAll !optional;
@@ -5006,6 +5039,9 @@ pre {
 .gifIconContainer_f2f431 {
   @extend %avatarGifIconContainer !optional;
 }
+.gifIcon_f2f431 {
+  @extend %avatarGifIcon !optional;
+}
 .editingContainer_ba5b9e {
   @extend %avatarEditingContainer !optional;
 }
@@ -5046,7 +5082,13 @@ pre {
   @extend %profileEffectDescriptionContainer !optional;
 }
 .shop_e77fa3 {
-  @extend %shop !optional;
+  @extend %shopAll !optional;
+}
+.shopAll_ebba41 {
+  @extend %popularPicksShopAll !optional;
+}
+.shop_ebba41 {
+  @extend %shopPreview !optional;
 }
 .shopScroll_e77fa3 {
   @extend %shopBackground !optional;
@@ -5134,15 +5176,6 @@ pre {
 }
 .icon_de3e42 {
   @extend %chatToolbarIcon !optional;
-}
-.popoutContainer_cf58b5 {
-  @extend %emojiInfoContainer !optional;
-}
-.emojiSection_e58351 {
-  @extend %emojiInfoTip !optional;
-}
-.guildSection_e58351 {
-  @extend %emojiInfoGuild !optional;
 }
 .category_c394c4 {
   @extend %channelSettingsCategory !optional;
@@ -5318,15 +5351,6 @@ pre {
 .footer_fa823b {
   @extend %everyoneWarningFooter !optional;
 }
-.modalHeaderCustomGift_a27f2f {
-  @extend %giftModalHeader !optional;
-}
-.iconBackground_e4d3f1 {
-  @extend %giftModalIconBackground !optional;
-}
-.spinner_b0f29a {
-  @extend %giftModalSpinner !optional;
-}
 .container_e1e1a4 {
   @extend %serverShopIntro !optional;
 }
@@ -5354,17 +5378,80 @@ pre {
 .footer_cf5d0a {
   @extend %webhookFooter !optional;
 }
-.layer_cd0de5::after {
+.layer_cd0de5 {
   @extend %webhookBackground !optional;
 }
 .guildPopout_cf5d0a {
   @extend %webhookPopout !optional;
 }
+.button_df39bd {
+  @extend %appPopoutButton !optional;
+}
 .contentWrapper_f7506e {
-  @extend %voiceActitvityWrapper !optional;
+  @extend %appPopoutWrapper !optional;
+}
+.container_c7c1c7 {
+  @extend %appPopoutContainer !optional;
+}
+.container_f8c206 {
+  @extend %appPopoutItemLoading !optional;
 }
 .container_e5da8b {
-  @extend %voiceActitvityItem !optional;
+  @extend %appPopoutItem !optional;
+}
+.rowContainer_e5da8b {
+  @extend %appPopoutRowItem !optional;
+}
+.rowDivider_e5da8b {
+  @extend %appPopoutRowItemUnderline !optional;
+}
+.viewMore_b7ba1b {
+  @extend %appPopoutViewMore !optional;
+}
+.container_ec8cd2 {
+  @extend %appPopoutDetails !optional;
+}
+.clickable_e82700 {
+  @extend %appPopoutDetailsBackButton !optional;
+}
+.stickyBanner_e46a21 {
+  @extend %appPopoutStickyBanner !optional;
+}
+.bannerBackground_e46a21 {
+  @extend %appPopoutBanner !optional;
+}
+.appIcon_ec8cd2 {
+  @extend %appPopoutAppIcon !optional;
+}
+.overviewContainerNoVideo_e80fe9 {
+  @extend %appPopoutAppOverview !optional;
+}
+.overviewContainerWithVideo_e80fe9 {
+  @extend %appPopoutAppOverviewWithVideo !optional;
+}
+.expandableDescriptionClickable_e80fe9 {
+  @extend %appPopoutAppOverviewShowMore !optional;
+}
+.sortDropdown_fd3eaf {
+  @extend %appPopoutDropdown !optional;
+}
+.commandContainer_f37ac2 {
+  @extend %appPopoutCommandContainer !optional;
+}
+.command_f37ac2 {
+  @extend %appPopoutCommand !optional;
+}
+.tagContainer_e80fe9 {
+  @extend %appPopoutTag !optional;
+}
+.container_fb1469 {
+  @extend %appPopoutLearnMore !optional;
+}
+.clickable_b78bb6 {
+  @extend %appPopoutSearchItem !optional;
+}
+.underline_b78bb6 {
+  @extend %appPopoutSearchItemUnderline !optional;
 }
 .emojiCounter_cf5d0a {
   @extend %webhookEmojiRow !optional;
@@ -5420,9 +5507,6 @@ pre {
 .elevatedPermission_f38b88 {
   @extend %modViewElevatedPermissionItem !optional;
 }
-.buttonWhite_b105e9 {
-  @extend %giftNitro !optional;
-}
 .shyButton_a25714 {
   @extend %shopNewPill !optional;
 }
@@ -5431,9 +5515,6 @@ pre {
 }
 .answerSelectionIcon_cf2c85 {
   @extend %pollAnswerSelectionIcon !optional;
-}
-.radioForeground_b97e9a {
-  @extend %pollRadioForeground !optional;
 }
 .answer_cf2c85 {
   @extend %pollAnswer !optional;
@@ -5447,8 +5528,35 @@ pre {
 .selected_cf2c85 {
   @extend %pollAnswerSelected !optional;
 }
+.checkbox_b97e9a {
+  @extend %pollCheckbox !optional;
+}
+.checkboxSelected_b97e9a {
+  @extend %pollCheckboxSelected !optional;
+}
 .secondaryButtonPresentation_a1531c {
   @extend %pollSecondaryButton !optional;
+}
+.scroller_cbdbf0 {
+  @extend %pollVotesPopoutAnswerScroller !optional;
+}
+.voters_cbdbf0 {
+  @extend %pollVotesPopoutVoters !optional;
+}
+.defaultTextInputWrapper_d274ca {
+  @extend %pollCreatePopoutAnswerInputWrapper !optional;
+}
+.addAnswerButton_f24a96 {
+  @extend %pollCreatePopoutAddAnswer !optional;
+}
+.addAnswerIconDefault_f24a96 {
+  @extend %pollCreatePopoutAddAnswerIcon !optional;
+}
+.addAnswerButtonLabel_f24a96 {
+  @extend %pollCreatePopoutAddAnswerLabel !optional;
+}
+.container_e365d2 {
+  @extend %pollEndContainer !optional;
 }
 .channelRow_b89a4c {
   @extend %clipsShareTo !optional;
@@ -5485,4 +5593,13 @@ pre {
 }
 .container_c94b03 {
   @extend %clipInChatFooter !optional;
+}
+.integrationWrapper_e2a436 {
+  @extend %subEnabledServers !optional;
+}
+.header_c258fa {
+  @extend %freeBoost !optional;
+}
+.tile_b5b752 {
+  @extend %nitroTrial !optional;
 }
