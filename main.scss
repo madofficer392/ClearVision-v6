@@ -97,13 +97,11 @@ $version: '6.9.0';
 @import 'src/modals/eventModal';
 @import 'src/modals/addServerModal';
 @import 'src/modals/keyboardShortcuts';
-@import 'src/modals/otherModals';
 @import 'src/modals/payments';
 @import 'src/modals/screenshare';
 @import 'src/modals/threadModal';
 
 // PAGES
-@import 'src/pages/appDirectory';
 @import 'src/pages/discordShop';
 @import 'src/pages/discover';
 @import 'src/pages/forums';
@@ -162,7 +160,6 @@ $version: '6.9.0';
 @import 'src/injectors/ven/icons';
 
 // REPLUGGED
-// @import 'src/injectors/rp/plugins';
 @import 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD
@@ -171,8 +168,8 @@ $version: '6.9.0';
 @import 'src/injectors/bd/icons';
 @import 'src/injectors/bd/popouts';
 @import 'src/injectors/bd/sidebar';
-@import 'src/injectors/bd/sources';
 @import 'src/injectors/bd/plugins';
 
 // FIXES
 @import 'src/fixespt2';
+@import 'src/visualRefresh'

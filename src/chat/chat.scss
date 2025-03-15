@@ -89,7 +89,23 @@
   background-color: transparent;
 }
 
-// UPLOAD DROP MODAL
+// REPLY MENTION TOGGLE
+div[aria-checked='true'] %replyMentionButton {
+  color: $main-color !important;
+}
+
+// THREAD
+%createThreadContainer {
+  background: rgba(0, 0, 0, calc($bg-shading * 0.5));
+}
+%threadIconWrapper {
+  background-color: $main-color;
+  path {
+    fill: #fff;
+  }
+}
+
+// UPLOAD DRAG DROP MODAL
 %uploadModalIn {
   %uploadDropModal {
     %uploadDropModalBgScale {
@@ -98,21 +114,5 @@
     %uploadDropModalInner {
       border: 2px dashed hsla(0, 0%, 100%, 0.5);
     }
-  }
-}
-
-// REPLY MENTION TOGGLE
-div[aria-checked='true'] %replyMentionButton {
-  color: $main-color !important;
-}
-
-// THREAD
-%createThreadContainer {
-  background-color: transparent;
-}
-%threadIconWrapper {
-  background-color: $main-color;
-  svg path {
-    fill: #fff;
   }
 }
